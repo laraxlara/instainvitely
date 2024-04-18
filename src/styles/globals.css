@@ -1,27 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap");
+
+@font-face {
+  font-family: "Spectral";
+  src: url("../../font/Fontspring-DEMO-theseasons-lt.otf");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-lg: "Spectral", serif;
+}
+/* 
+* {
+  font-family: var(--font-lg);
+  font-weight: 100;
+} */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-lg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.custom-img {
+  background-image: url("../../public/images/parallax.png");
 }
