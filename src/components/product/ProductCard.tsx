@@ -39,7 +39,7 @@ function ProductCard() {
 
       <div className="relative bg-white pt-3">
         <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-          Digital Invite
+          Digital Invitation
         </h3>
         {/* {products?.map((product) => (
           <div key={product.id} className="card">
